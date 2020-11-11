@@ -30,7 +30,19 @@ div {
             <p>This website is owned and operated by <b><i>Caelan Kennedy.</i></b><br><br>Georgia Southern has a beautiful
 campus with lots of greenery. It also features a lake next to one of the dining commons that
 has become a large attraction.<br>Please be on the look out for more information soon with <b>Caelan's
-News Network!</b> Sponsors include <i>Zaxby's, Chick-fil-a, Georga Southern, and more.</i></p>
+News Network!</b> Sponsors include <i>Zaxby's, Chick-fil-a, Georga Southern, and more.</i></p><br><br>
+	<input type="txt" id="time" name="time">
+	
+<script>
+setTimeout(ticktock, 100);
 
+function ticktock() {
+  var d = new Date();
+  n = d.toLocaleTimeString();
+  document.getElementById("time").innerHTML = n;
+  setTimeout(ticktock, 100);
+}	
+	
+</script>
 </body>
 </html>
